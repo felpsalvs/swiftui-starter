@@ -15,6 +15,7 @@
 		D0A4BC952A559DB30037B65D /* swiftui_starterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A4BC942A559DB30037B65D /* swiftui_starterUITests.swift */; };
 		D0A4BC972A559DB30037B65D /* swiftui_starterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A4BC962A559DB30037B65D /* swiftui_starterUITestsLaunchTests.swift */; };
 		D0A4BCA42A55A1A20037B65D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A4BCA32A55A1A20037B65D /* Item.swift */; };
+		D0A4BCA62A55AB070037B65D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A4BCA52A55AB070037B65D /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		D0A4BC942A559DB30037B65D /* swiftui_starterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_starterUITests.swift; sourceTree = "<group>"; };
 		D0A4BC962A559DB30037B65D /* swiftui_starterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_starterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D0A4BCA32A55A1A20037B65D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D0A4BCA52A55AB070037B65D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		D0A4BC6D2A559DB00037B65D = {
 			isa = PBXGroup;
 			children = (
+				D0A4BCA52A55AB070037B65D /* DetailView.swift */,
 				D0A4BCA32A55A1A20037B65D /* Item.swift */,
 				D0A4BC782A559DB00037B65D /* swiftui-starter */,
 				D0A4BC892A559DB30037B65D /* swiftui-starterTests */,
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0A4BC7C2A559DB00037B65D /* ContentView.swift in Sources */,
+				D0A4BCA62A55AB070037B65D /* DetailView.swift in Sources */,
 				D0A4BCA42A55A1A20037B65D /* Item.swift in Sources */,
 				D0A4BC7A2A559DB00037B65D /* swiftui_starterApp.swift in Sources */,
 			);
