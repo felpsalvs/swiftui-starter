@@ -8,43 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var items: [Item] = []
-    @State private var newItemTitle = ""
-    @State private var newItemDescription = ""
+    @State private var tasks: [Task] = []
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink(destination: DetailView(item: item)) {
-                        Text(item.title)
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .navigationTitle("Items")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: addItem) {
-                        Image(systemName: "plus")
-                    }
+            List(tasks) { task in
+                NavigationLink(destination: DetailView(task: task)){
+                    Text(task.title)
                 }
             }
+            .navigationBarTitle("Task List")
+            .navigationBarItems(trailing:
+                NavigationLink(destination: AddTaskView(tasks: $tasks)) {
+                Image(systemName: "plus")
+            })
         }
-    }
-    
-    func addItem() {
-        let newItem = Item(title: newItemTitle, description: newItemDescription)
-        items.append(newItem)
-        newItemTitle = ""
-        newItemDescription = ""
-    }
-    
-    func deleteItems(at offsets: IndexSet){
-        items.remove(atOffsets: offsets)
     }
 }
 

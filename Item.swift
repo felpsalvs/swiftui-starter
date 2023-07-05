@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Item: Identifiable {
+struct Task: Identifiable {
     let id = UUID()
     var title: String
     var description: String
